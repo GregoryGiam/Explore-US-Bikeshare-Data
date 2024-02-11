@@ -60,7 +60,7 @@ The original files are much larger and messier, and you don't need to download t
 
 
 ## Udacity data analyst Bikeshare data
-This project explores Bike share data from 3 differents cities; it uses data from csv files to compute staticts from those 3 cities, also takes user inputs to create an interactive experience.
+This project explores Bike share data from 3 differents cities; it uses data from csv files to compute statistics from those 3 cities, also takes user inputs to create an interactive experience.
 
 ## Built with
 - Python
