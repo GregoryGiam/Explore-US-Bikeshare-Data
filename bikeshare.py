@@ -74,16 +74,16 @@ def time_stats(df):
 
     # TO DO: display the most common month
     popular_month = df['month'].mode()[0]
-    print("The most common month is: "popular_month)
+    print("The most common month is: ", popular_month)
     
     # TO DO: display the most common day of week
     popular_day = df['day_of_week'].mode()[0]
-    print("The most common day is: "popular_day)
+    print("The most common day is: ", popular_day)
     
     # TO DO: display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
     popular_hour = df['hour'].mode()[0]
-    print(popular_hour)
+    print("The most common start hour is: ", popular_hour)
     
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -148,9 +148,9 @@ def user_stats(df):
         recent_birth_year = df['Birth Year'].max()
         earliest_birth_year = df['Birth Year'].min()
         common_birth_year = df['Birth Year'].mode()[0]
-        print("The earliest year of birth is:",earliest_year_of_birth,
-          ", most recent one is:",most_recent_year_of_birth,
-           "and the most common one is: ",most_common_year_of_birth)
+        print("The earliest year of birth is:",earliest_birth_year,
+          ", most recent one is:",recent_birth_year,
+           "and the most common one is: ",common_birth_year)
     except KeyError:
         print('Birth stats cannot be calculated because Birth year does not appear in the dataframe')
     print("\nThis took %s seconds." % (time.time() - start_time))
