@@ -148,7 +148,9 @@ def user_stats(df):
         recent_birth_year = df['Birth Year'].max()
         earliest_birth_year = df['Birth Year'].min()
         common_birth_year = df['Birth Year'].mode()[0]
-        print(earliest_birth_year, recent_birth_year, common_birth_year)
+        print("The earliest year of birth is:",earliest_year_of_birth,
+          ", most recent one is:",most_recent_year_of_birth,
+           "and the most common one is: ",most_common_year_of_birth)
     except KeyError:
         print('Birth stats cannot be calculated because Birth year does not appear in the dataframe')
     print("\nThis took %s seconds." % (time.time() - start_time))
